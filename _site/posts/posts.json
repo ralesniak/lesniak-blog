@@ -1,17 +1,5 @@
 [
   {
-    "path": "posts/welcome/",
-    "title": "Hola mundo",
-    "description": "Testing out how this works",
-    "author": [],
-    "date": "2021-06-08",
-    "categories": [],
-    "contents": "\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-06-08T18:43:46-04:00",
-    "input_file": "welcome.knit.md"
-  },
-  {
     "path": "posts/2021-06-08-tidy-tuesday/",
     "title": "tidy-tuesday",
     "description": "A short description of the post.",
@@ -26,6 +14,18 @@
     "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
     "preview": {},
     "last_modified": "2021-06-08T18:45:00-04:00",
-    "input_file": "tidy-tuesday.knit.md"
+    "input_file": {}
+  },
+  {
+    "path": "posts/welcome/",
+    "title": "Hola mundo",
+    "description": "Testing out how this works",
+    "author": [],
+    "date": "2021-06-08",
+    "categories": [],
+    "contents": "\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-06-08T18:43:46-04:00",
+    "input_file": {}
   }
 ]
