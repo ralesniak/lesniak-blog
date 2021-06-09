@@ -1,7 +1,7 @@
 name: "lesniak-blog"
 title: "Rachel Lesniak"
 description: "Personal blog of Rachel Lesniak"
-base_url: http://www.rachellesniak.com
+base_url: https://www.rachellesniak.com
 collections:
   posts:
     custom: _custom.html
