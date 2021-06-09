@@ -1,5 +1,7 @@
 ---
 title: "Hola mundo"
+categories:
+  - meta
 description: |
   Testing out how this works
 date: 06-08-2021

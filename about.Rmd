@@ -1,7 +1,7 @@
 ---
-title: "About this blog"
+title: "About Rachel"
 description: |
-  Some additional details about the blog
+  Rachel is a transit planner in Washington, DC with a love of data and workflows.
 ---
 
 ```{r setup, include=FALSE}

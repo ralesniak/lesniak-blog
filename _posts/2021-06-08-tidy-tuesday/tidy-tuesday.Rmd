@@ -1,5 +1,7 @@
 ---
 title: "tidy-tuesday"
+categories:
+  - tidy tuesday
 description: |
   A short description of the post.
 author: Rachel Lesniak

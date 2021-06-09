@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
+  <url>
+    <loc>http://www.rachellesniak.com/about.html</loc>
+    <lastmod>2021-06-08T21:15:46-04:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.rachellesniak.com/</loc>
+    <lastmod>2021-06-08T19:29:12-04:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.rachellesniak.com/posts/2021-06-08-tidy-tuesday/</loc>
+    <lastmod>2021-06-08T21:15:06-04:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.rachellesniak.com/posts/welcome/</loc>
+    <lastmod>2021-06-08T21:14:40-04:00</lastmod>
+  </url>
+</urlset>

@@ -10,10 +10,12 @@
       }
     ],
     "date": "2021-06-08",
-    "categories": [],
+    "categories": [
+      "tidy tuesday"
+    ],
     "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-06-08T18:45:00-04:00",
+    "last_modified": "2021-06-08T21:15:06-04:00",
     "input_file": {}
   },
   {
@@ -22,10 +24,12 @@
     "description": "Testing out how this works",
     "author": [],
     "date": "2021-06-08",
-    "categories": [],
+    "categories": [
+      "meta"
+    ],
     "contents": "\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-06-08T18:43:46-04:00",
+    "last_modified": "2021-06-08T21:14:40-04:00",
     "input_file": {}
   }
 ]

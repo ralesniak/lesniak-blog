@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Rachel Lesniak</title>
+    <link>http://www.rachellesniak.com</link>
+    <atom:link href="http://www.rachellesniak.com/index.xml" rel="self" type="application/rss+xml"/>
+    <description>Personal blog of Rachel Lesniak</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Tue, 08 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>tidy-tuesday</title>
+      <dc:creator>Rachel Lesniak</dc:creator>
+      <link>http://www.rachellesniak.com/posts/2021-06-08-tidy-tuesday</link>
+      <description>A short description of the post.</description>
+      <category>tidy tuesday</category>
+      <guid>http://www.rachellesniak.com/posts/2021-06-08-tidy-tuesday</guid>
+      <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Hola mundo</title>
+      <link>http://www.rachellesniak.com/posts/welcome</link>
+      <description>Testing out how this works</description>
+      <category>meta</category>
+      <guid>http://www.rachellesniak.com/posts/welcome</guid>
+      <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
