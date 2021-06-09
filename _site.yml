@@ -12,6 +12,12 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+    - icon: fa fa-twitter
+      href: https://twitter.com/ralesniak
+    - icon: fa fa-linkedin
+      href: https://www.linkedin.com/in/ralesniak/
+    - icon: fa fa-github
+      href: https://github.com/ralesniak
 output: 
   distill::distill_article:
     css: styles.css
