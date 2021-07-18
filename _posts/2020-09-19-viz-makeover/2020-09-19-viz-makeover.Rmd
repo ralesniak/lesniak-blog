@@ -1,0 +1,164 @@
+---
+title: "Viz Makeover: Survey of Public Transit Agencies"
+categories:
+  - viz
+description: |
+  Making over a viz from APTA
+date: 09-19-2020
+output:
+  distill::distill_article:
+    self_contained: false
+---
+Context and audience mean so much for data visualization. On Twitter, I sometimes see charts that have great information but aren't optimized for the Twitter experience. Some common missed opportunities:
+
+* They're too big, so the Twitter crop hides the important parts
+
+* The title doesn't give the big idea, so it's easy to scroll on by
+
+* The viz doesn't take advantage of branding to associate the analysis with the organization
+
+Sometimes I'm inspired to make charts over to be more Twitter-friendly, mostly for my own fun. Here's one I did using a survey of American public transit agencies by the American Public Transportation Association.
+
+## Setup
+
+I'm only using three packages today - `tidyverse` as the anchor, `showtext` for custom fonts, and `ggtext` for colorizing the category labels.
+
+The [original viz](https://www.apta.com/wp-content/uploads/APTA-Brief-Agency-Survey-Sept-2020.pdf) had the data points in the image, so I made a quick `tribble` to capture the data.
+
+```{r}
+library(tidyverse)
+library(showtext)
+library(ggtext)
+
+#Fonts
+font_add_google(name = "Roboto", family = "roboto")
+font_add_google(name = "Rubik", family = "rubik")
+showtext_auto()
+
+# APTA Data
+
+apta_data <- tibble::tribble(
+                                    ~category, ~value,
+                           "Eliminate Routes",   0.38,
+                     "Reduce Days of Service",   0.20,
+                                "Cut Service",   0.61,
+                             "Furlough Staff",   0.23,
+                              "Lay Off Staff",   0.31,
+                             "Increase Fares",   0.17,
+  "Delay, Defer, or Cancel Vehicle Purchases",   0.33,
+   "Delay, Defer, or Cancel Capital Projects",   0.45
+  )
+
+```
+
+## Organize data
+
+I love using `ggtext` to make the category labels pop, but it takes a tiny bit of set up. 
+
+* First, I name all the colors, which I copied from the APTA website to match the branding. 
+
+* Then, I `mutate()` to make a `highlight` column to specify the color. 
+
+* A second `mutate()` plus some basic HTML makes a new `label` column that will be called in the chart. 
+
+* I also `fct_reorder()` the data based on percentage value.
+
+```{r}
+
+# colors
+bg_gray <- "#F5F5F5"
+axis_line_gray <- "#B8B8B8"
+other_gray <- "#474747"
+
+highlight_1 <- "#650533" #apta maroon
+highlight_2 <- "#094279" #apta blue
+
+#add in new columns re: color and labels
+
+plot_data <- apta_data %>%
+  mutate(
+    highlight = case_when(
+      category == "Cut Service" ~ highlight_1,
+      str_detect(category, "Capital") ~ highlight_2,
+      TRUE ~ 	other_gray
+    ),
+    category_label = 
+      glue::glue("<span style ='color:{highlight}'>{category}</span>"),
+    category_label = fct_reorder(category_label, value)
+  )
+
+```
+
+## Plotting
+
+Now it's time to make a chart! 
+
+* I kept the column chart style and kept the `value` on the x-axis. 
+
+* The y-axis became the `category_label` and requires `element_markdown()` in the theme to render the HTML.
+
+* Then, for the fill, I used the `highlight` column along with `scale_fill_identity()`. The bars also print from largest to smallest value because of the factor created in the step above.
+
+* A big title and subtitle explain the chart. It took some trial and error to get the right size font plus using `<br>` for some manual spacings. These also require `element_markdown()` in the theme.
+
+* I use some custom Google fonts to spice up the default san serif.
+
+```{r}
+
+# the chart!
+new_plot <- plot_data %>%
+  ggplot(aes(x = value, y = category_label, fill = highlight)) +
+  geom_col() +
+  scale_x_continuous(labels = scales::percent_format()) +
+  scale_fill_identity() +
+  labs(title = glue::glue("Without emergency funding from Congress, 
+  your transit agency<br>might <span style='color:{highlight_1}'>cut 
+  service</span> or <span style='color:{highlight_2}'>delay 
+  infrastructure projects</span>"),
+       subtitle = "Percent of transit agencies that said they were 
+                  considering the following actions",
+       caption = "n = 128<br>Source: APTA.com, Sep 2020") +
+  theme_classic(base_size = 12) +
+  theme(
+    #align title left
+    plot.title.position = "plot",
+    #colors and fonts
+    text = element_text(family = "rubik"),
+    plot.background = element_rect(fill = bg_gray),
+    panel.background = element_rect(fill = bg_gray,
+                                    colour = bg_gray),
+    axis.line = element_line(color = axis_line_gray),
+    plot.title = element_markdown(family = "roboto", 
+                                  face = "bold"),
+    plot.subtitle = element_markdown(family = "roboto"),
+    plot.caption = element_markdown(), 
+    axis.text.y = element_markdown(),
+    #no annoying stuff
+    axis.title = element_blank(),
+    legend.position = "none"
+    )
+
+new_plot
+```
+
+I'm pretty happy with this! I wish APTA colors were a little more dynamic, but this chart gets the main idea across faster.
+
+## Export
+
+Then, to export, a blank PNG is created and the plot is printed on top. This is different than `ggsave()` because of the custom fonts. I made the PNG the size of the Twitter cropped image so nothing would be lost.
+
+```{r eval = FALSE}
+# Export Plot
+
+# {showtext} requires these steps, no ggsave available
+
+png(filename = "new_plot.png",
+    width = 600,
+    height = 335)
+new_plot
+dev.off()
+
+```
+
+
+
