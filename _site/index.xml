@@ -6,15 +6,15 @@
     <atom:link href="https://www.rachellesniak.com/index.xml" rel="self" type="application/rss+xml"/>
     <description>Personal blog of Rachel Lesniak</description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 08 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2020 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>tidy-tuesday</title>
-      <dc:creator>Rachel Lesniak</dc:creator>
-      <link>https://www.rachellesniak.com/posts/2021-06-08-tidy-tuesday</link>
-      <description>A short description of the post.</description>
-      <category>tidy tuesday</category>
-      <guid>https://www.rachellesniak.com/posts/2021-06-08-tidy-tuesday</guid>
-      <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
+      <title>Viz Makeover: VMT during the Pandemic</title>
+      <link>https://www.rachellesniak.com/posts/2020-10-11-fhwa-vmt</link>
+      <description>Making over a viz using FHWA data</description>
+      <category>viz</category>
+      <guid>https://www.rachellesniak.com/posts/2020-10-11-fhwa-vmt</guid>
+      <pubDate>Sun, 11 Oct 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://www.rachellesniak.com/posts/2020-10-11-fhwa-vmt/2020-10-11-fhwa-vmt_files/figure-html5/unnamed-chunk-3-1.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
       <title>Viz Makeover: Survey of Public Transit Agencies</title>

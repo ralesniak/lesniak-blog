@@ -86,37 +86,36 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>tidy-tuesday</title>
+  <title>Viz Makeover: Vehicle Miles Traveled</title>
   
   <meta property="description" itemprop="description" content="A short description of the post."/>
   
   
   <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2021-06-08"/>
-  <meta property="article:created" itemprop="dateCreated" content="2021-06-08"/>
-  <meta name="article:author" content="Rachel Lesniak"/>
+  <meta property="article:published" itemprop="datePublished" content="2020-10-11"/>
+  <meta property="article:created" itemprop="dateCreated" content="2020-10-11"/>
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="tidy-tuesday"/>
+  <meta property="og:title" content="Viz Makeover: Vehicle Miles Traveled"/>
   <meta property="og:type" content="article"/>
   <meta property="og:description" content="A short description of the post."/>
   <meta property="og:locale" content="en_US"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="tidy-tuesday"/>
+  <meta property="twitter:title" content="Viz Makeover: Vehicle Miles Traveled"/>
   <meta property="twitter:description" content="A short description of the post."/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","categories","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["tidy-tuesday"]},{"type":"character","attributes":{},"value":["tidy tuesday"]},{"type":"character","attributes":{},"value":["A short description of the post.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Rachel Lesniak"]}]}]},{"type":"character","attributes":{},"value":["06-08-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","categories","description","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Viz Makeover: Vehicle Miles Traveled"]},{"type":"character","attributes":{},"value":["viz"]},{"type":"character","attributes":{},"value":["A short description of the post.\n"]},{"type":"character","attributes":{},"value":["10-11-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["tidy-tuesday_files/anchor-4.2.2/anchor.min.js","tidy-tuesday_files/bowser-1.9.3/bowser.min.js","tidy-tuesday_files/distill-2.2.21/template.v2.js","tidy-tuesday_files/jquery-1.11.3/jquery.min.js","tidy-tuesday_files/popper-2.6.0/popper.min.js","tidy-tuesday_files/tippy-6.2.7/tippy-bundle.umd.min.js","tidy-tuesday_files/tippy-6.2.7/tippy-light-border.css","tidy-tuesday_files/tippy-6.2.7/tippy.css","tidy-tuesday_files/tippy-6.2.7/tippy.umd.min.js","tidy-tuesday_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["vmt_chart.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1454,7 +1453,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"tidy-tuesday","description":"A short description of the post.","authors":[{"author":"Rachel Lesniak","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-06-08T00:00:00.000+00:00","citationText":"Lesniak, 2021"}
+{"title":"Viz Makeover: Vehicle Miles Traveled","description":"A short description of the post.","authors":[],"publishedDate":"2020-10-11T00:00:00.000+00:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1464,26 +1463,117 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>tidy-tuesday</h1>
+<h1>Viz Makeover: Vehicle Miles Traveled</h1>
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
-<div class="dt=tag">tidy tuesday</div>
+<div class="dt=tag">viz</div>
 </div>
 <!--/radix_placeholder_categories-->
 <p><p>A short description of the post.</p></p>
 </div>
 
-<div class="d-byline">
-  
-  Rachel Lesniak
-  
-<br/>06-08-2021
-</div>
 
 <div class="d-article">
-<p>Distill is a publication format for scientific and technical writing, native to the web.</p>
-<p>Learn more about using Distill at <a href="https://rstudio.github.io/distill" class="uri">https://rstudio.github.io/distill</a>.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://lubridate.tidyverse.org'>lubridate</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/yixuan/showtext'>showtext</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://wilkelab.org/ggtext'>ggtext</a></span><span class='op'>)</span>
+
+
+<span class='co'># Fonts -------------------------------------------------------------------</span>
+
+<span class='fu'>font_add_google</span><span class='op'>(</span>name <span class='op'>=</span> <span class='st'>"Spartan"</span>, family <span class='op'>=</span> <span class='st'>"spartan"</span><span class='op'>)</span>
+<span class='fu'>font_add_google</span><span class='op'>(</span>name <span class='op'>=</span> <span class='st'>"Roboto"</span>, family <span class='op'>=</span> <span class='st'>"roboto"</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/pkg/showtext/man/showtext_auto.html'>showtext_auto</a></span><span class='op'>(</span><span class='op'>)</span>
+
+<span class='co'># Colors ------------------------------------------------------------------</span>
+
+<span class='va'>bg_gray</span> <span class='op'>&lt;-</span> <span class='st'>"#f4f4f4"</span>
+<span class='va'>axis_line_gray</span> <span class='op'>&lt;-</span> <span class='st'>"#B8B8B8"</span>
+
+<span class='va'>highlight_1</span> <span class='op'>&lt;-</span> <span class='st'>"#1d3557"</span>
+<span class='va'>highlight_2</span> <span class='op'>&lt;-</span> <span class='st'>"#e63946"</span> 
+
+<span class='co'># FHWA Data ---------------------------------------------------------------</span>
+
+<span class='co'>## data source</span>
+<span class='co'>## https://www.fhwa.dot.gov/policyinformation/travel_monitoring/20jultvt/20jultvt.pdf</span>
+<span class='co'>## data in BILLIONS</span>
+
+<span class='va'>vmt_data</span> <span class='op'>&lt;-</span> <span class='fu'>tibble</span><span class='fu'>::</span><span class='fu'><a href='https://tibble.tidyverse.org/reference/tribble.html'>tribble</a></span><span class='op'>(</span>
+               <span class='op'>~</span><span class='va'>category</span>, <span class='op'>~</span><span class='va'>year</span>, <span class='op'>~</span><span class='va'>JAN</span>, <span class='op'>~</span><span class='va'>FEB</span>, <span class='op'>~</span><span class='va'>MAR</span>,  <span class='op'>~</span><span class='va'>APR</span>,  <span class='op'>~</span><span class='va'>MAY</span>, <span class='op'>~</span><span class='va'>JUN</span>,  <span class='op'>~</span><span class='va'>JUL</span>, <span class='op'>~</span><span class='va'>AUG</span>, <span class='op'>~</span><span class='va'>SEP</span>,  <span class='op'>~</span><span class='va'>OCT</span>, <span class='op'>~</span><span class='va'>NOV</span>, <span class='op'>~</span><span class='va'>DEC</span>,
+      <span class='st'>"Rural Interstate"</span>, <span class='fl'>2019L</span>, <span class='fl'>18.7</span>, <span class='fl'>16.8</span>, <span class='fl'>20.9</span>,    <span class='fl'>22</span>,  <span class='fl'>23.1</span>,   <span class='fl'>23</span>,  <span class='fl'>25.4</span>, <span class='fl'>24.2</span>, <span class='fl'>21.5</span>,  <span class='fl'>22.4</span>, <span class='fl'>20.5</span>, <span class='fl'>21.7</span>,
+  <span class='st'>"Rural Other Arterial"</span>, <span class='fl'>2019L</span>, <span class='fl'>27.6</span>, <span class='fl'>25.7</span>,   <span class='fl'>31</span>,  <span class='fl'>32.3</span>,  <span class='fl'>33.6</span>, <span class='fl'>33.8</span>,  <span class='fl'>36.7</span>, <span class='fl'>35.2</span>, <span class='fl'>32.9</span>,  <span class='fl'>33.9</span>, <span class='fl'>30.3</span>, <span class='fl'>31.2</span>,
+           <span class='st'>"Other Rural"</span>, <span class='fl'>2019L</span>, <span class='fl'>25.1</span>, <span class='fl'>22.8</span>,   <span class='fl'>28</span>,    <span class='fl'>30</span>,  <span class='fl'>30.7</span>, <span class='fl'>30.5</span>,  <span class='fl'>32.7</span>, <span class='fl'>31.4</span>, <span class='fl'>29.2</span>,  <span class='fl'>30.3</span>, <span class='fl'>26.8</span>, <span class='fl'>27.5</span>,
+      <span class='st'>"Urban Interstate"</span>, <span class='fl'>2019L</span>, <span class='fl'>43.9</span>, <span class='fl'>39.8</span>, <span class='fl'>48.1</span>,  <span class='fl'>48.9</span>,  <span class='fl'>50.3</span>, <span class='fl'>50.5</span>,  <span class='fl'>49.9</span>, <span class='fl'>49.8</span>, <span class='fl'>47.9</span>,  <span class='fl'>49.3</span>, <span class='fl'>47.1</span>, <span class='fl'>49.7</span>,
+  <span class='st'>"Urban Other Arterial"</span>, <span class='fl'>2019L</span>, <span class='fl'>90.4</span>,   <span class='fl'>83</span>, <span class='fl'>97.8</span>, <span class='fl'>100.6</span>, <span class='fl'>100.5</span>, <span class='fl'>97.4</span>, <span class='fl'>102.5</span>, <span class='fl'>99.9</span>, <span class='fl'>95.8</span>, <span class='fl'>101.8</span>, <span class='fl'>92.5</span>, <span class='fl'>98.3</span>,
+           <span class='st'>"Other Urban"</span>, <span class='fl'>2019L</span>, <span class='fl'>42.5</span>, <span class='fl'>38.7</span>, <span class='fl'>45.7</span>,  <span class='fl'>47.6</span>,  <span class='fl'>47.8</span>, <span class='fl'>45.8</span>,  <span class='fl'>48.4</span>, <span class='fl'>46.2</span>, <span class='fl'>44.5</span>,  <span class='fl'>46.1</span>, <span class='fl'>43.3</span>, <span class='fl'>45.7</span>,
+      <span class='st'>"Rural Interstate"</span>, <span class='fl'>2020L</span>, <span class='fl'>19.2</span>, <span class='fl'>17.4</span>, <span class='fl'>16.8</span>,  <span class='fl'>12.2</span>,  <span class='fl'>16.9</span>, <span class='fl'>19.5</span>,  <span class='fl'>22.2</span>,   <span class='cn'>NA</span>,   <span class='cn'>NA</span>,    <span class='cn'>NA</span>,   <span class='cn'>NA</span>,   <span class='cn'>NA</span>,
+  <span class='st'>"Rural Other Arterial"</span>, <span class='fl'>2020L</span>, <span class='fl'>28.3</span>, <span class='fl'>26.4</span>, <span class='fl'>25.8</span>,  <span class='fl'>20.4</span>,  <span class='fl'>26.4</span>, <span class='fl'>30.6</span>,  <span class='fl'>33.5</span>,   <span class='cn'>NA</span>,   <span class='cn'>NA</span>,    <span class='cn'>NA</span>,   <span class='cn'>NA</span>,   <span class='cn'>NA</span>,
+           <span class='st'>"Other Rural"</span>, <span class='fl'>2020L</span>, <span class='fl'>25.6</span>, <span class='fl'>23.3</span>, <span class='fl'>23.5</span>,    <span class='fl'>20</span>,  <span class='fl'>24.6</span>, <span class='fl'>27.9</span>,  <span class='fl'>30.6</span>,   <span class='cn'>NA</span>,   <span class='cn'>NA</span>,    <span class='cn'>NA</span>,   <span class='cn'>NA</span>,   <span class='cn'>NA</span>,
+      <span class='st'>"Urban Interstate"</span>, <span class='fl'>2020L</span>, <span class='fl'>44.9</span>, <span class='fl'>40.7</span>, <span class='fl'>37.8</span>,  <span class='fl'>26.9</span>,    <span class='fl'>35</span>, <span class='fl'>41.8</span>,  <span class='fl'>42.5</span>,   <span class='cn'>NA</span>,   <span class='cn'>NA</span>,    <span class='cn'>NA</span>,   <span class='cn'>NA</span>,   <span class='cn'>NA</span>,
+  <span class='st'>"Urban Other Arterial"</span>, <span class='fl'>2020L</span>,   <span class='fl'>92</span>, <span class='fl'>84.6</span>, <span class='fl'>78.6</span>,  <span class='fl'>59.5</span>,  <span class='fl'>73.7</span>, <span class='fl'>83.8</span>,  <span class='fl'>90.4</span>,   <span class='cn'>NA</span>,   <span class='cn'>NA</span>,    <span class='cn'>NA</span>,   <span class='cn'>NA</span>,   <span class='cn'>NA</span>,
+           <span class='st'>"Other Urban"</span>, <span class='fl'>2020L</span>, <span class='fl'>43.6</span>, <span class='fl'>39.5</span>, <span class='fl'>37.6</span>,  <span class='fl'>29.4</span>,  <span class='fl'>36.1</span>, <span class='fl'>40.3</span>,  <span class='fl'>43.2</span>,   <span class='cn'>NA</span>,   <span class='cn'>NA</span>,    <span class='cn'>NA</span>,   <span class='cn'>NA</span>,   <span class='cn'>NA</span>
+  <span class='op'>)</span>
+
+<span class='co'>#reshape from wide to tidy</span>
+<span class='va'>vmt_reshaped</span> <span class='op'>&lt;-</span> <span class='va'>vmt_data</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>pivot_longer</span><span class='op'>(</span>cols <span class='op'>=</span> <span class='op'>-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"category"</span>, <span class='st'>"year"</span><span class='op'>)</span>, names_to <span class='op'>=</span> <span class='st'>"month_char"</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>mutate</span><span class='op'>(</span>year_month <span class='op'>=</span> <span class='fu'><a href='http://lubridate.tidyverse.org/reference/ymd.html'>ymd</a></span><span class='op'>(</span><span class='fu'>glue</span><span class='fu'>::</span><span class='fu'><a href='https://glue.tidyverse.org/reference/glue.html'>glue</a></span><span class='op'>(</span><span class='st'>"{year}-{month_char}-01"</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://rdrr.io/r/stats/filter.html'>filter</a></span><span class='op'>(</span><span class='op'>!</span><span class='fu'><a href='https://rdrr.io/r/base/NA.html'>is.na</a></span><span class='op'>(</span><span class='va'>value</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='co'>#create a general category to summarize</span>
+  <span class='fu'>mutate</span><span class='op'>(</span>general_category <span class='op'>=</span> <span class='fu'>if_else</span><span class='op'>(</span><span class='fu'>str_detect</span><span class='op'>(</span><span class='va'>category</span>, <span class='st'>"Rural"</span><span class='op'>)</span>, <span class='st'>"Rural"</span>, <span class='st'>"Urban"</span><span class='op'>)</span><span class='op'>)</span>
+
+<span class='va'>vmt_chart</span> <span class='op'>&lt;-</span> <span class='va'>vmt_reshaped</span> <span class='op'>%&gt;%</span>
+  <span class='co'>#split out into two lines to compare year-to-year</span>
+  <span class='fu'>group_by</span><span class='op'>(</span><span class='va'>year_month</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>summarize</span><span class='op'>(</span>value <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/sum.html'>sum</a></span><span class='op'>(</span><span class='va'>value</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>mutate</span><span class='op'>(</span>month <span class='op'>=</span> <span class='fu'><a href='http://lubridate.tidyverse.org/reference/month.html'>month</a></span><span class='op'>(</span><span class='va'>year_month</span>, label <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>,
+         year <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/character.html'>as.character</a></span><span class='op'>(</span><span class='fu'><a href='http://lubridate.tidyverse.org/reference/year.html'>year</a></span><span class='op'>(</span><span class='va'>year_month</span><span class='op'>)</span><span class='op'>)</span>,
+         chart_color <span class='op'>=</span> <span class='fu'>if_else</span><span class='op'>(</span><span class='va'>year</span> <span class='op'>==</span> <span class='st'>"2019"</span>, <span class='va'>highlight_1</span>, <span class='va'>highlight_2</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>ggplot</span><span class='op'>(</span><span class='fu'>aes</span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>month</span>, y <span class='op'>=</span> <span class='va'>value</span>, color <span class='op'>=</span> <span class='va'>chart_color</span>, group <span class='op'>=</span> <span class='va'>year</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>geom_line</span><span class='op'>(</span>size <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>scale_color_identity</span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>scale_y_continuous</span><span class='op'>(</span>limits <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>100</span>, <span class='cn'>NA</span><span class='op'>)</span>,
+    labels <span class='op'>=</span> <span class='fu'>scales</span><span class='fu'>::</span><span class='fu'><a href='https://scales.r-lib.org/reference/label_number.html'>number_format</a></span><span class='op'>(</span>suffix <span class='op'>=</span> <span class='st'>"B"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>labs</span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"Traffic is stabilizing after COVID-related plunge"</span>,
+       subtitle <span class='op'>=</span> <span class='fu'>glue</span><span class='fu'>::</span><span class='fu'><a href='https://glue.tidyverse.org/reference/glue.html'>glue</a></span><span class='op'>(</span><span class='st'>"Monthly vehicle miles (urban and rural), 
+       &lt;b style='color:{highlight_1}'&gt;2019&lt;/b&gt; compared to &lt;b style='color:{highlight_2}'&gt;2020&lt;/b&gt;"</span><span class='op'>)</span>,
+       caption <span class='op'>=</span> <span class='st'>"Source: Federal Highway Administration, July 2020"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>theme_classic</span><span class='op'>(</span>base_size <span class='op'>=</span> <span class='fl'>16</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>theme</span><span class='op'>(</span>
+    <span class='co'>#align title left</span>
+    plot.title.position <span class='op'>=</span> <span class='st'>"plot"</span>,
+    <span class='co'>#colors and fonts</span>
+    text <span class='op'>=</span> <span class='fu'>element_text</span><span class='op'>(</span>family <span class='op'>=</span> <span class='st'>"roboto"</span><span class='op'>)</span>,
+    plot.background <span class='op'>=</span> <span class='fu'>element_rect</span><span class='op'>(</span>fill <span class='op'>=</span> <span class='va'>bg_gray</span><span class='op'>)</span>,
+    panel.background <span class='op'>=</span> <span class='fu'>element_rect</span><span class='op'>(</span>fill <span class='op'>=</span> <span class='va'>bg_gray</span>,
+                                    colour <span class='op'>=</span> <span class='va'>bg_gray</span><span class='op'>)</span>,
+    axis.line <span class='op'>=</span> <span class='fu'>element_line</span><span class='op'>(</span>color <span class='op'>=</span> <span class='va'>axis_line_gray</span><span class='op'>)</span>,
+    plot.title <span class='op'>=</span> <span class='fu'>element_text</span><span class='op'>(</span>family <span class='op'>=</span> <span class='st'>"spartan"</span>, face <span class='op'>=</span> <span class='st'>"bold"</span><span class='op'>)</span>,
+    plot.subtitle <span class='op'>=</span> <span class='fu'><a href='https://wilkelab.org/ggtext/reference/element_markdown.html'>element_markdown</a></span><span class='op'>(</span>family <span class='op'>=</span> <span class='st'>"spartan"</span><span class='op'>)</span>,
+    axis.text.y <span class='op'>=</span> <span class='fu'>element_text</span><span class='op'>(</span><span class='op'>)</span>,
+    <span class='co'>#no annoying stuff</span>
+    axis.title <span class='op'>=</span> <span class='fu'>element_blank</span><span class='op'>(</span><span class='op'>)</span>,
+    legend.position <span class='op'>=</span> <span class='st'>"none"</span>
+  <span class='op'>)</span>
+
+
+<span class='co'># Export in Twitter Size --------------------------------------------------</span>
+
+<span class='fu'><a href='https://rdrr.io/r/grDevices/png.html'>png</a></span><span class='op'>(</span>filename <span class='op'>=</span> <span class='st'>"vmt_chart.png"</span>,
+    width <span class='op'>=</span> <span class='fl'>600</span>,
+    height <span class='op'>=</span> <span class='fl'>335</span><span class='op'>)</span>
+<span class='va'>vmt_chart</span>
+<span class='fu'><a href='https://rdrr.io/r/grDevices/dev.html'>dev.off</a></span><span class='op'>(</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>quartz_off_screen 
+                2 </code></pre>
+</div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
